@@ -11,31 +11,32 @@
 [![GitHub Last Commit][last-commit-shield]][commits]
 [![Contributors][contributors-shield]][contributors-url]
 
-Home Assistant core release **2021.8** you can now also get started with the [energy dashboard][energy] in Home Assistant!
+Home Assistant **2021.8** sürümünden itibaren yayınlanan [energy dashboard][energy] paneline veri üretmek üzere oluşturulmuş sensör devresidir.
 
 <p align="center">
   <img width="80%" src="images/home-assistant-glow.jpg">
 </p>
 
 <details>
-  <summary>Click here to see the Home Assistant Glow in action!</summary>
+  <summary>Çalışma aşamasını izlemek için tıklayınız!</summary>
 
   <p align="center">
-    <img src="images/glow_sensor_testing.gif" alt="Glow testing" width="40%"/><img src="images/glow_in_action.gif" alt="Glow in action" width="40%"/>
+    <img src="images/glow_sensor_testing.gif" alt="Sayaç Test" width="40%"/><img src="images/glow_in_action.gif" alt="Sayaç Çalışması" width="40%"/>
   </p>
 </details>
 
-Home Assistant Glow makes it possible to read a (not so) smart meter that is not equipped with a P1 port, reading the pulse LED that is always present in most cases and it works with [ESPHome][esphome]! To neatly hide it all in your meter cupboard, a case has been designed that you can 3D print yourself.
+Home Assistant Elektrik Sayacı, Akıllı Sayaçlar üzerinde (yarı akıllı) bulunan ve elektril tüketimine bağlı yanıp sönen pulse LED okuma esasına dayalı ESPHOME yazılımı ile çelışarak Home Assistant a entegre olan bir sensor devresidir. 3D printer ile basım yaparak imal edebileceğiniz bir kutu tasarımı da beraberinde verilmiştir. 
 
-### How do I know if my meter is supported
 
-To make sure your meter will work with the Home Assistant Glow, you have to look for the **imp/kWh** rate (see picture). Make a note of it, because you will need this value at a later stage to configure the yaml file.
+### Sayacım buna uygun mu? nasıl anlarım?
+
+Sayacınızın Home Assistant Elektrik Sayacı ile çalışacağından emin olmak için **imp/kWh** değerini aramanız gerekir (Pulse LED altındaki değer - resme bakın). Bunu not edin, çünkü yaml dosyasını yapılandırmak için daha sonraki aşamada bu değere ihtiyacınız olacak.
 
 <p align="center">
   <img width="60%" src="images/pulse_rate.png">
 </p>
 
-## Hardware
+## Elektronik Bileşenler
 
 First, fill your 🛒 or see if you already have the components below.
 
