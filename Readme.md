@@ -70,13 +70,11 @@ How the status led is connected to the ESP32. For each measured pulse, the LED w
 | BLUE   | D5 (GPIO5) |
 | GND    | GND        |
 
-## Başlayalıyalım
+## Başlayalım
 
-Tüm donanımı bağladığınızda, ESPHome için yükleme ve knfigürasyona başlayacağız. Bu repoda, Home Assistant yapılandırmanızın 'esphome' klasörüne kopyalayabileceğiniz [home_assistant_glow.yaml][file] dosyasını bulacaksınız. **substitutions** altındaki "pulse_rate" değerini sayacınızda LED altında yazan değere ayarlayın ([gösterge/kWh oranımı nasıl bulurum?](#sayacım-destekleniyorsa-nasıl-do-i-know-if-if- )), varsayılan olarak yaml dosyasında "1000" değeri kullanılır. Son olarak ESPHome kurulum sihirbazından geçin ve ESP32/8266 devrenize kodu yükleyin.
+Tüm donanımı bağladığınızda, ESPHome için yükleme ve knfigürasyona başlayacağız. Bu repoda, Home Assistant yapılandırmanızın 'esphome' klasörüne kopyalayabileceğiniz [home_assistant_glow.yaml][file] dosyasını bulacaksınız. **substitutions** altındaki "pulse_rate" değerini sayacınızda LED altında yazan değere ayarlayın ([imp/kWh oranımı nasıl bulurum?](#sayacım-buna-uygun-mu-nasıl-anlarım )), varsayılan olarak yaml dosyasında "1000" değeri kullanılır. Son olarak ESPHome kurulum sihirbazından geçin ve ESP32/8266 devrenize kodu yükleyin.
 
-Once you've connected all the hardware, we'll get started with the configuration for ESPHome. In this repository you will find the file [home_assistant_glow.yaml][file], which you can copy into the `esphome` folder of your Home Assistant config. Adjust the value `pulse_rate` under **substitutions** to the value on your meter ([how do I find my imp/kWh rate?](#how-do-i-know-if-my-meter-is-supported)), by default the value `1000` is used in the yaml file. Finally go through the installation wizard of ESPHome and flash the ESP32/8266.
-
-## License
+## Lisans
 
 MIT License
 
