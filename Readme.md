@@ -38,21 +38,21 @@ Sayacınızın Home Assistant Elektrik Sayacı ile çalışacağından emin olma
 
 ## Elektronik Bileşenler
 
-First, fill your 🛒 or see if you already have the components below.
+İlk olarak, kullanılacak parçaları aşağıdaki linklerden temin edebilirsiniz 🛒 yada elinizdeki mevcutları kullanabilirsiniz.
 
-- [ESP32](https://banggood.app.link/Lsoq6aHIgib)
-- [Dupont Jumpers](https://banggood.app.link/It6c1WPIgib)
-- 3D printed case (see the [case](/case) folder)
-- Photodiode - [Banggood](https://banggood.app.link/2OqdFiWIgib) or [AliExpress](https://nl.aliexpress.com/item/1005001640685908.html) (make sure that you do not accidentally order or receive an LDR)
-- [LED RGB 5mm 4 pin kathode](https://banggood.app.link/cmAcKpuKgib)
+- [ESP32](https://www.robolinkmarket.com/esp32-wroom-wifi-ve-bluetooth-modulu)
+- [Dupont Kablolar](https://www.robolinkmarket.com/arama?q=dupont&ps=4) İhtiyaca göre adedi belirleyerek satın alınız
+- 3D baskı proje kutusu (bakınız [case](/case) klasörü)
+- [Photodiyod](https://www.robolinkmarket.com/lm393-fotodiyot-sensor)
+- [RGB LED 5mm-Ortak Katot](https://www.robolinkmarket.com/rgb-led-5mm-ortak-katot)
 
-### Diagrams
+### Bağlantılar
 
-How everything is connected together.
+Aşağıdaki bağlantı noktalarını dupont kablolar yardımı ile bağlayınız
 
-#### Photodiode
+#### Photodiyod
 
-| PHOTODIODE | ESP32        |
+| PHOTODIYOD | ESP32        |
 |------------|--------------|
 | A0         | NOT USING    |
 | DO         | D12 (GPIO12) |
@@ -70,7 +70,9 @@ How the status led is connected to the ESP32. For each measured pulse, the LED w
 | BLUE   | D5 (GPIO5) |
 | GND    | GND        |
 
-## Get started
+## Başlayalıyalım
+
+Tüm donanımı bağladığınızda, ESPHome için yükleme ve knfigürasyona başlayacağız. Bu repoda, Home Assistant yapılandırmanızın 'esphome' klasörüne kopyalayabileceğiniz [home_assistant_glow.yaml][file] dosyasını bulacaksınız. **substitutions** altındaki "pulse_rate" değerini sayacınızda LED altında yazan değere ayarlayın ([gösterge/kWh oranımı nasıl bulurum?](#sayacım-destekleniyorsa-nasıl-do-i-know-if-if- )), varsayılan olarak yaml dosyasında "1000" değeri kullanılır. Son olarak ESPHome kurulum sihirbazından geçin ve ESP32/8266 devrenize kodu yükleyin.
 
 Once you've connected all the hardware, we'll get started with the configuration for ESPHome. In this repository you will find the file [home_assistant_glow.yaml][file], which you can copy into the `esphome` folder of your Home Assistant config. Adjust the value `pulse_rate` under **substitutions** to the value on your meter ([how do I find my imp/kWh rate?](#how-do-i-know-if-my-meter-is-supported)), by default the value `1000` is used in the yaml file. Finally go through the installation wizard of ESPHome and flash the ESP32/8266.
 
