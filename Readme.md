@@ -25,7 +25,7 @@ Home Assistant **2021.8** sürümünden itibaren yayınlanan [energy dashboard][
   </p>
 </details>
 
-Home Assistant Elektrik Sayacı, Akıllı Sayaçlar üzerinde (yarı akıllı) bulunan ve elektril tüketimine bağlı yanıp sönen pulse LED okuma esasına dayalı ESPHOME yazılımı ile çelışarak Home Assistant a entegre olan bir sensor devresidir. 3D printer ile basım yaparak imal edebileceğiniz bir kutu tasarımı da beraberinde verilmiştir. 
+Home Assistant Elektrik Sayacı, Akıllı Sayaçlar üzerinde (yarı akıllı) bulunan ve elektrik tüketimine bağlı yanıp sönen pulse LED okuma esasına dayalı ESPHOME yazılımı ile çalışarak Home Assistant a entegre olan bir sensor devresidir. 3D printer ile basım yaparak imal edebileceğiniz bir kutu tasarımı da beraberinde verilmiştir. 
 
 
 ### Sayacım buna uygun mu? nasıl anlarım?
