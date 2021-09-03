@@ -1,4 +1,4 @@
-## Home Assistant Glow 🌟
+## Home Assistant Elektrik Sayacı 🌟
 
 <!-- PROJECT SHIELDS -->
 ![Project Maintenance][maintenance-shield]
@@ -11,7 +11,7 @@
 [![GitHub Last Commit][last-commit-shield]][commits]
 [![Contributors][contributors-shield]][contributors-url]
 
-During my internship at [Nabu Casa][nc] in the first half of 2021, I focused on energy management in your house and how you can collect all energy data and display it in a dashboard. From core release **2021.8** you can now also get started with the [energy dashboard][energy] in Home Assistant!
+Home Assistant core release **2021.8** you can now also get started with the [energy dashboard][energy] in Home Assistant!
 
 <p align="center">
   <img width="80%" src="images/home-assistant-glow.jpg">
